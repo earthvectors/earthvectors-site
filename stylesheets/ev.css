@@ -1,0 +1,23 @@
+
+body {
+  background-color: var(--dark-two);
+}
+
+.ev-header {
+  width: 1024px;
+  height: 120px;
+  background-color: var(--dark-two);
+}
+.ev-footer {
+  width: 1024px;
+  height: 312px;
+  background-color: #209d75;
+}
+
+.ev-footer-image {
+  width: 120px;
+  height: 120px;
+}
+.ev-section {
+  height: 90vh;
+}
