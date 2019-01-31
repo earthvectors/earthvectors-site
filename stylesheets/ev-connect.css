@@ -10,8 +10,6 @@
     height: 586px;
 }
 .ev-connect-h2 {
-    width: 609px;
-    height: 73px;
     font-family: Roboto;
     font-size: 40px;
     font-weight: bold;
@@ -19,7 +17,6 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: var(--health-blue);
 }
 .ev-connect-text {
     width: 609px;
@@ -34,8 +31,6 @@
     color: var(--white);
 }
 .ev-connect-label {
-    width: 611px;
-    height: 20px;
     font-family: Roboto;
     font-size: 20px;
     font-weight: normal;
@@ -43,7 +38,6 @@
     font-stretch: normal;
     line-height: 1;
     letter-spacing: normal;
-    color: var(--health-blue);
 }
 
 .ev-connect-button {

@@ -1,90 +1,357 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="stylesheets/colors.css"/>
+<link rel="stylesheet" href="stylesheets/fonts.css"/>
+<link rel="stylesheet" href="stylesheets/ev-services.css"/>
+<link rel="stylesheet" href="stylesheets/ev-about.css"/>
+<link rel="stylesheet" href="stylesheets/ev-connect.css"/>
+<body class="w3-dark-two">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-dark-two w3-wide w3-padding w3-card">
+        <!--<a href="#home" class="w3-bar-item w3-button">-->
+        <!---->
+        <!--</a>-->
+        <!--<div class=" w3-display-container w3-padding-16">-->
+        <!--<img class="w3-image w3-bar-item" src="images/ev-logo-stacked.svg" alt="EarthVectors"/>-->
+        <!--</div>-->
 
-    <link rel="stylesheet" href="stylesheets/colors.css"/>
-    <link rel="stylesheet" href="stylesheets/fonts.css"/>
-    <link rel="stylesheet" href="stylesheets/ev.css"/>
-    <link rel="stylesheet" href="stylesheets/ev-services.css"/>
-    <link rel="stylesheet" href="stylesheets/ev-about.css"/>
-    <link rel="stylesheet" href="stylesheets/ev-connect.css"/>
-    <title>Hello, world!</title>
-  </head>
-  <body class="container">
-    <header class="ev-header">
-      <nav class="navbar navbar-expand-lg" role="nav">
-        <img class="navbar-brand" src="images/ev-logo-color.svg" width="25%">
+        <!-- Float links to the right. Hide them on small screens -->
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar nav" id="evNav" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="services-tab" data-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="true">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="connect-tab" data-toggle="tab" href="#connect" role="tab" aria-controls="connect" aria-selected="false">Connect</a>
-            </li>
-          </ul>
+        <div class="w3-left w3-hide-small">
+            <a href="#home" class="w3-bar-item w3-button">
+                <img class="w3-bar-item w3-image" src="images/ev-logo-color.svg" alt="EarthVectors"/>
+            </a>
+
+            <a href="#projects" class="w3-bar-item w3-button">Services</a>
+            <a href="#about" class="w3-bar-item w3-button">About</a>
+            <a href="#contact" class="w3-bar-item w3-button">Connect</a>
         </div>
-      </nav>
-    </header>
-    <div class="tab-content">
-      <div class="ev-section ev-services active" id="services" role="tabpanel" aria-labelledby="services-tab">
-        <h1 class="ev-services-h1">We Do Cool Stuff</h1>
-        <h2 class="ev-services-h2">This is the stuff</h2>
-        <div class="ev-services-text">Aenean nisl ligula, lobortis eu euismod sit amet, sodales auctor mi. Suspendisse bibendum lorem vitae feugiat dapibus. Mauris vehicula dui sit amet eros consectetur suscipit. Nullam sed est sed elit finibus tempus. Quisque consectetur, orci vitae rhoncus commodo, mi libero congue augue, non blandit elit neque non mauris. Maecenas eleifend neque nec arcu lobortis luctus. Ut dictum et est eget scelerisque. Sed sollicitudin viverra condimentum.</div>
-
-        <p class="ev-services-list">Pair Programming</p>
-        <p class="ev-services-list">Developer Training</p>
-        <p class="ev-services-list">Cutting Edge Technology</p>
-        <p class="ev-services-list">Cool Stuff</p>
-        <p class="ev-services-list">Awesome Things</p>
-        <p class="ev-services-list">Maintainable Code</p>
-      </div>
-      <div class="ev-section ev-about " id="about" role="tabpanel" aria-labelledby="about-tab">
-        <h2 class="ev-about-h2">We are a team of cool people</h2>
-        <div class="ev-about-text">
-          Aenean nisl ligula, lobortis eu euismod sit amet, sodales auctor mi. Suspendisse bibendum lorem vitae feugiat dapibus. Mauris vehicula dui sit amet eros consectetur suscipit. Nullam sed est sed elit finibus tempus. Quisque consectetur, orci vitae rhoncus commodo, mi libero congue augue, non blandit elit neque non mauris. Maecenas eleifend neque nec arcu lobortis luctus. Ut dictum et est eget scelerisque. Sed sollicitudin viverra condimentum.
-        </div>
-      </div>
-      <div class="ev-section ev-connect " id="connect" role="tabpanel" aria-labelledby="connect-tab">
-        <h2 class="ev-connect-h2">Connect</h2>
-        <form class="ev-connect-form">
-            <div class="form-group">
-              <label class="ev-connect-label" for="nameFormControl">Name</label>
-              <input type="email" class="form-control" id="nameFormControl" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-              <label class="ev-connect-label" for="emailFormControl">Email</label>
-              <input type="email" class="form-control" id="emailFormControl" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-              <label class="ev-connect-label" for="messageFormControl">Message</label>
-              <textarea class="form-control" id="messageFormControl" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary ev-connect-button">SEND MESSAGE</button>
-          </form>
-      </div>
     </div>
-    <footer class="ev-footer">
-      <img class="ev-footer-image" src="images/ev-logo-stacked.svg"/>
-      <p>Located in Denver, CO</p>
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  </body>
+</div>
+
+<!-- Header -->
+<!--<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">-->
+<!--<img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">-->
+<!--<div class="w3-display-middle w3-margin-top w3-center">-->
+<!--<h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>-->
+<!--</div>-->
+<!--</header>-->
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1920px">
+
+    <!-- Project Section -->
+    <div class="w3-container w3-padding-64 w3-dark-two ev-services" id="projects">
+        <div class="w3-row">
+            <div class="w3-col m7 l7">
+                <h1 class="ev-services-h1">We Do Cool Stuff</h1>
+                <h2 class="ev-services-h2">This is the stuff</h2>
+                <div class="ev-services-text">Aenean nisl ligula, lobortis eu euismod sit amet, sodales auctor mi.
+                    Suspendisse bibendum lorem vitae feugiat dapibus. Mauris vehicula dui sit amet eros consectetur
+                    suscipit. Nullam sed est sed elit finibus tempus. Quisque consectetur, orci vitae rhoncus commodo,
+                    mi libero congue augue, non blandit elit neque non mauris. Maecenas eleifend neque nec arcu lobortis
+                    luctus. Ut dictum et est eget scelerisque. Sed sollicitudin viverra condimentum.
+                </div>
+
+                <p class="ev-services-list">Pair Programming</p>
+                <p class="ev-services-list">Developer Training</p>
+                <p class="ev-services-list">Cutting Edge Technology</p>
+                <p class="ev-services-list">Cool Stuff</p>
+                <p class="ev-services-list">Awesome Things</p>
+                <p class="ev-services-list">Maintainable Code</p>
+            </div>
+            <div class="w3-col m5 l5">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     viewBox="0 0 470.93 613.1">
+                    <defs>
+                        <radialGradient id="a" cx="31.41" cy="600.46" r="14.04" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.02" stop-color="#6db2ff" stop-opacity="0.1"/>
+                            <stop offset="1" stop-color="#46ffaa" stop-opacity="0.4"/>
+                        </radialGradient>
+                        <radialGradient id="b" cx="-285.09" cy="64.55" r="14.04"
+                                        gradientTransform="translate(478.39 155.42) rotate(11.48)" xlink:href="#a"/>
+                        <radialGradient id="c" cx="-1725.64" cy="228.9" r="9.82"
+                                        gradientTransform="translate(1393.04 1069.33) rotate(45)"
+                                        gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#6db2ff" stop-opacity="0.1"/>
+                            <stop offset="1" stop-color="#46ffaa" stop-opacity="0.4"/>
+                        </radialGradient>
+                        <radialGradient id="d" cx="-1160.23" cy="159.35" r="9.82" xlink:href="#c"/>
+                        <radialGradient id="e" cx="393.98" cy="88.37" r="8.6"
+                                        gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#c"/>
+                        <radialGradient id="f" cx="261.7" cy="462.68" r="8.6"
+                                        gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#c"/>
+                        <linearGradient id="g" x1="20.12" y1="304.79" x2="390.31" y2="304.79"
+                                        gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#6db2ff" stop-opacity="0"/>
+                            <stop offset="1" stop-color="#46ffaa" stop-opacity="0.4"/>
+                        </linearGradient>
+                        <linearGradient id="h" x1="300.01" y1="304.53" x2="233.04" y2="438.47" xlink:href="#g"/>
+                        <radialGradient id="i" cx="-1418.54" cy="181.42" r="9.82" xlink:href="#c"/>
+                        <linearGradient id="j" x1="235.52" y1="349.67" x2="89.63" y2="349.19" xlink:href="#g"/>
+                        <radialGradient id="k" cx="428.66" cy="508.33" r="14.04" xlink:href="#a"/>
+                        <radialGradient id="l" cx="75.48" cy="281.76" r="8.6"
+                                        gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#c"/>
+                    </defs>
+                    <title>ev-lines</title>
+                    <polygon points="24.01 590.65 26.25 611.94 43.57 599.35 24.01 590.65" style="fill:url(#a)"/>
+                    <polygon points="24.01 590.65 26.25 611.94 43.57 599.35 24.01 590.65"
+                             style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                    <polygon points="180.85 150.83 178.81 172.14 198.29 163.26 180.85 150.83" style="fill:url(#b)"/>
+                    <polygon points="180.85 150.83 178.81 172.14 198.29 163.26 180.85 150.83"
+                             style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                    <circle cx="10.97" cy="10.97" r="9.82" style="fill:url(#c)"/>
+                    <circle cx="10.97" cy="10.97" r="9.82"
+                            style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                    <circle cx="459.96" cy="361.6" r="9.82" style="fill:url(#d)"/>
+                    <circle cx="459.96" cy="361.6" r="9.82"
+                            style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                    <polyline
+                            points="393.98 97.56 401.94 92.97 401.94 83.77 393.98 79.18 386.02 83.77 386.02 92.97 393.98 97.56"
+                            style="fill:url(#e)"/>
+                    <polygon
+                            points="393.98 97.56 401.94 92.97 401.94 83.77 393.98 79.18 386.02 83.77 386.02 92.97 393.98 97.56"
+                            style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                    <polyline
+                            points="261.7 471.87 269.67 467.27 269.67 458.08 261.7 453.49 253.74 458.08 253.74 467.27 261.7 471.87"
+                            style="fill:url(#f)"/>
+                    <polygon
+                            points="261.7 471.87 269.67 467.27 269.67 458.08 261.7 453.49 253.74 458.08 253.74 467.27 261.7 471.87"
+                            style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                    <polyline points="33.86 595.03 390.31 95.44 386.02 86.16 20.12 14.55" style="fill:url(#g)"/>
+                    <line x1="20.12" y1="14.55" x2="386.02" y2="86.16"
+                          style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                    <line x1="390.31" y1="95.44" x2="33.86" y2="595.03"
+                          style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                    <polyline points="450.14 366.64 269.67 460.98 258.21 455.5 187.97 166.25" style="fill:url(#h)"/>
+                    <line x1="187.96" y1="166.25" x2="258.21" y2="455.5"
+                          style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                    <line x1="450.14" y1="366.64" x2="269.67" y2="460.98"
+                          style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                    <circle cx="261.7" cy="194.56" r="9.82" style="fill:url(#i)"/>
+                    <circle cx="261.7" cy="194.56" r="9.82"
+                            style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                    <polyline points="254.76 201.5 83.51 281.63 421.25 498.52" style="fill:url(#j)"/>
+                    <polyline points="254.76 201.5 83.51 281.63 421.25 498.52"
+                              style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                    <polygon points="421.25 498.52 423.49 519.81 440.81 507.22 421.25 498.52" style="fill:url(#k)"/>
+                    <polygon points="421.25 498.52 423.49 519.81 440.81 507.22 421.25 498.52"
+                             style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                    <polyline
+                            points="75.48 290.95 83.44 286.36 83.44 277.16 75.48 272.57 67.52 277.16 67.52 286.36 75.48 290.95"
+                            style="fill:url(#l)"/>
+                    <polygon
+                            points="75.48 290.95 83.44 286.36 83.44 277.16 75.48 272.57 67.52 277.16 67.52 286.36 75.48 290.95"
+                            style="fill:none;stroke:#209d75;stroke-linejoin:round;stroke-width:2.31514986299078px"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32 w3-dark-blue" id="about">
+        <div class="w3-row">
+            <div class="w3-col m10 l10 w3-cell-middle">
+                <div class="w3-container w3-cell w3-cell-middle">
+                    <h2 class="ev-about-h2">We are a team of cool people</h2>
+                    <div class="ev-about-text">
+                        Aenean nisl ligula, lobortis eu euismod sit amet, sodales auctor mi. Suspendisse bibendum lorem
+                        vitae feugiat dapibus. Mauris vehicula dui sit amet eros consectetur suscipit. Nullam sed est
+                        sed elit finibus tempus. Quisque consectetur, orci vitae rhoncus commodo, mi libero congue
+                        augue, non blandit elit neque non mauris. Maecenas eleifend neque nec arcu lobortis luctus. Ut
+                        dictum et est eget scelerisque. Sed sollicitudin viverra condimentum.
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-cell w3-col m2 l2 w3-left">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     viewBox="0 0 129.84 145.18">
+                    <defs>
+                        <radialGradient id="a" cx="69.69" cy="79.04" r="58.27" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#46ffaa" stop-opacity="0"/>
+                            <stop offset="0.23" stop-color="#46ffaa" stop-opacity="0.01"/>
+                            <stop offset="0.42" stop-color="#46ffaa" stop-opacity="0.05"/>
+                            <stop offset="0.6" stop-color="#46ffaa" stop-opacity="0.12"/>
+                            <stop offset="0.77" stop-color="#46ffaa" stop-opacity="0.22"/>
+                            <stop offset="0.93" stop-color="#46ffaa" stop-opacity="0.34"/>
+                            <stop offset="1" stop-color="#46ffaa" stop-opacity="0.4"/>
+                        </radialGradient>
+                        <radialGradient id="n" cx="64.92" cy="72.56" r="40.66" xlink:href="#a"/>
+                    </defs>
+                    <title>ev-group</title>
+                    <circle cx="15.12" cy="43.81" r="14.41" style="fill:url(#a)"/>
+                    <circle cx="15.12" cy="101.31" r="14.41" style="fill:url(#a)"/>
+                    <circle cx="114.71" cy="43.81" r="14.41" style="fill:url(#a)"/>
+                    <circle cx="114.71" cy="101.31" r="14.41" style="fill:url(#a)"/>
+                    <circle cx="64.92" cy="15.12" r="14.41" style="fill:url(#a)"/>
+                    <circle cx="64.92" cy="72.56" r="24.9" style="fill:url(#a)"/>
+                    <circle cx="86.31" cy="60.24" r="24.9" style="fill:url(#a)"/>
+                    <circle cx="43.78" cy="60.24" r="24.9" style="fill:url(#a)"/>
+                    <circle cx="64.92" cy="97.46" r="24.9" style="fill:url(#a)"/>
+                    <circle cx="64.92" cy="130.06" r="14.41" style="fill:url(#a)"/>
+                    <polygon
+                            points="64.92 130.06 114.72 101.31 114.72 43.81 64.92 15.06 15.13 43.81 15.13 101.31 64.92 130.06"
+                            style="fill:url(#a)"/>
+                    <line x1="15.12" y1="43.81" x2="114.71" y2="101.31" style="fill:url(#a)"/>
+                    <line x1="15.12" y1="43.81" x2="114.71" y2="101.31" style="fill:url(#a)"/>
+                    <line x1="64.92" y1="15.06" x2="64.92" y2="130.06" style="fill:url(#n)"/>
+                    <line x1="114.71" y1="43.81" x2="15.12" y2="101.31" style="fill:url(#a)"/>
+                    <polygon points="64.92 15.13 15.16 101.31 114.68 101.31 64.92 15.13" style="fill:url(#a)"/>
+                    <circle cx="15.12" cy="43.81" r="14.41"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="15.12" cy="101.31" r="14.41"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="114.71" cy="43.81" r="14.41"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="114.71" cy="101.31" r="14.41"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="64.92" cy="15.12" r="14.41"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="64.92" cy="72.56" r="24.9"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="86.31" cy="60.24" r="24.9"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="43.78" cy="60.24" r="24.9"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="64.92" cy="97.46" r="24.9"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="64.92" cy="130.06" r="14.41"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <polygon
+                            points="64.92 130.06 114.72 101.31 114.72 43.81 64.92 15.06 15.13 43.81 15.13 101.31 64.92 130.06"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <line x1="15.12" y1="43.81" x2="114.71" y2="101.31"
+                          style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <line x1="15.12" y1="43.81" x2="114.71" y2="101.31"
+                          style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <line x1="64.92" y1="15.06" x2="64.92" y2="130.06"
+                          style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <line x1="114.71" y1="43.81" x2="15.12" y2="101.31"
+                          style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <polygon points="64.92 15.13 15.16 101.31 114.68 101.31 64.92 15.13"
+                             style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-32 w3-dark-two" id="contact">
+        <div class="w3-row">
+            <div class="w3-col s0 m3 l4"></div>
+            <div class="w3-col s12 m3 l4">
+                <h2 class="w3-padding-16 w3-text-health-blue ev-connect-h2">Connect</h2>
+                <form action="/action_page.php" target="_blank">
+                    <label class="w3-text-health-blue ev-connect-label w3-padding-16" for="nameForm">Name</label>
+                    <input class="w3-input w3-section w3-border-0 w3-dark w3-text-white" type="text"
+                           placeholder="Firstname Lastname" required name="Name" id="nameForm">
+                    <label class="w3-text-health-blue ev-connect-label w3-margin-top" for="emailForm">Email</label>
+                    <input class="w3-input w3-section w3-border-0 w3-dark" type="email" placeholder="Email" required
+                           name="Email" id="emailForm">
+                    <label class="w3-text-health-blue ev-connect-label" for="messageForm">Message</label>
+                    <textarea class="w3-input w3-section w3-border-0 w3-dark" type="text"
+                              placeholder="Personal message..." required
+                              name="Subject" id="messageForm"></textarea>
+                    <button class="w3-button w3-black w3-section w3-code-green w3-text-white" type="submit">
+                        SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+            <div class="w3-col s0 m3 l4 w3-right">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     viewBox="0 0 129.84 598.62">
+                    <defs>
+                        <radialGradient id="a" cx="69.69" cy="532.48" r="58.27" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#46ffaa" stop-opacity="0"/>
+                            <stop offset="0.23" stop-color="#46ffaa" stop-opacity="0.01"/>
+                            <stop offset="0.42" stop-color="#46ffaa" stop-opacity="0.05"/>
+                            <stop offset="0.6" stop-color="#46ffaa" stop-opacity="0.12"/>
+                            <stop offset="0.77" stop-color="#46ffaa" stop-opacity="0.22"/>
+                            <stop offset="0.93" stop-color="#46ffaa" stop-opacity="0.34"/>
+                            <stop offset="1" stop-color="#46ffaa" stop-opacity="0.4"/>
+                        </radialGradient>
+                        <radialGradient id="m" cx="64.92" cy="526" r="40.66" xlink:href="#a"/>
+                        <radialGradient id="p" cx="69.69" cy="79.04" r="58.27" xlink:href="#a"/>
+                    </defs>
+                    <title>ev-connect</title>
+                    <circle cx="15.12" cy="497.25" r="14.41" style="fill:url(#a)"/>
+                    <circle cx="15.12" cy="554.75" r="14.41" style="fill:url(#a)"/>
+                    <circle cx="114.71" cy="497.25" r="14.41" style="fill:url(#a)"/>
+                    <circle cx="114.71" cy="554.75" r="14.41" style="fill:url(#a)"/>
+                    <circle cx="64.92" cy="526" r="24.9" style="fill:url(#a)"/>
+                    <circle cx="86.31" cy="513.67" r="24.9" style="fill:url(#a)"/>
+                    <circle cx="43.78" cy="513.67" r="24.9" style="fill:url(#a)"/>
+                    <circle cx="64.92" cy="550.9" r="24.9" style="fill:url(#a)"/>
+                    <circle cx="64.92" cy="583.5" r="14.41" style="fill:url(#a)"/>
+                    <polygon
+                            points="64.92 583.5 114.72 554.75 114.72 497.25 64.92 468.5 15.13 497.25 15.13 554.75 64.92 583.5"
+                            style="fill:url(#a)"/>
+                    <line x1="15.12" y1="497.25" x2="114.71" y2="554.75" style="fill:url(#a)"/>
+                    <line x1="15.12" y1="497.25" x2="114.71" y2="554.75" style="fill:url(#a)"/>
+                    <line x1="64.92" y1="468.5" x2="64.92" y2="583.5" style="fill:url(#m)"/>
+                    <line x1="114.71" y1="497.25" x2="15.12" y2="554.75" style="fill:url(#a)"/>
+                    <polygon points="64.92 468.56 15.16 554.75 114.68 554.75 64.92 468.56" style="fill:url(#a)"/>
+                    <circle cx="15.12" cy="497.25" r="14.41"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="15.12" cy="554.75" r="14.41"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="114.71" cy="497.25" r="14.41"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="114.71" cy="554.75" r="14.41"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="64.92" cy="526" r="24.9"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="86.31" cy="513.67" r="24.9"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="43.78" cy="513.67" r="24.9"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="64.92" cy="550.9" r="24.9"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="64.92" cy="583.5" r="14.41"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <polygon
+                            points="64.92 583.5 114.72 554.75 114.72 497.25 64.92 468.5 15.13 497.25 15.13 554.75 64.92 583.5"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <line x1="15.12" y1="497.25" x2="114.71" y2="554.75"
+                          style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <line x1="15.12" y1="497.25" x2="114.71" y2="554.75"
+                          style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <line x1="64.92" y1="468.5" x2="64.92" y2="583.5"
+                          style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <line x1="114.71" y1="497.25" x2="15.12" y2="554.75"
+                          style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <polygon points="64.92 468.56 15.16 554.75 114.68 554.75 64.92 468.56"
+                             style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <circle cx="64.92" cy="15.12" r="14.41" style="fill:url(#p)"/>
+                    <circle cx="64.92" cy="15.12" r="14.41"
+                            style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <line x1="64.8" y1="29.53" x2="64.8" y2="31.69"
+                          style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                    <line x1="64.8" y1="35.91" x2="64.8" y2="44.38"
+                          style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px;stroke-dasharray:0.019622357562184334,4.221561908721924,4.231372833251953,0"/>
+                    <line x1="64.8" y1="44.38" x2="64.8" y2="467.52"
+                          style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px;stroke-dasharray:4.231372833251953,4.221561908721924,0.019622357562184334,4.221561908721924,4.231372833251953,0"/>
+                    <line x1="64.8" y1="467.52" x2="64.8" y2="469.68"
+                          style="fill:none;stroke:#46ffaa;stroke-linejoin:round;stroke-width:1.4376026391983px"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-dark-green">
+    <img class="ev-footer-image" src="images/ev-logo-stacked.svg"/>
+    <p>Located in Denver, CO</p>
+</footer>
+
+</body>
 </html>

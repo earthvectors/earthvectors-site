@@ -1,8 +1,9 @@
 .ev-services {
-    background-image: url("../images/ev-lines.svg");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-color: var(--dark-two);
+    /*background-image: url("../images/ev-lines.svg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position-x: right;*/
+    /*background-color: var(--dark-two);*/
+
 }
 .ev-services-h1 {
     width: 730px;
