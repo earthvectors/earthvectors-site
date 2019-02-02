@@ -11,6 +11,9 @@ body {
   float: left;
   padding-right: 10px;
 }
+.ev-image-responsive {
+  float: none;
+}
 .ev-footer {
   width: 1024px;
   height: 312px;
