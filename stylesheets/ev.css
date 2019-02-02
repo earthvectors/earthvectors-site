@@ -6,6 +6,11 @@ body {
   height: 120px;
   background-color: var(--dark-two);
 }
+.ev-image {
+  width: 10rem;
+  float: left;
+  padding-right: 10px;
+}
 .ev-footer {
   width: 1024px;
   height: 312px;
