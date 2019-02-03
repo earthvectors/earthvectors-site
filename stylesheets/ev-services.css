@@ -16,12 +16,13 @@
     /*height: 73px;*/
     font-family: Roboto;
     font-size: 4.0rem;
-    /*font-weight: bold;*/
+    font-weight: bold;
     /*font-style: normal;*/
     /*font-stretch: normal;*/
     /*line-height: normal;*/
     /*letter-spacing: normal;*/
     color: var(--health-blue);
+    margin-top: 122px;
 }
 
 
